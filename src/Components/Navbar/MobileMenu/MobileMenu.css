@@ -1,0 +1,41 @@
+.nav-mobile {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(257, 27%, 26%);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+}
+
+.nav-mobile button.link {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.nav-mobile hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background: hsl(257, 7%, 63%);
+    opacity: .5;
+}
+
+.nav-mobile button.green-btn {
+    background: hsl(180, 66%, 49%);
+    border: none;
+    padding: .7rem 0;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 1rem 0;
+}

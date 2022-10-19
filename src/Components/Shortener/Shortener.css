@@ -1,0 +1,101 @@
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8rem auto 0;
+    width: 80%;
+    padding: 1.5rem;
+    background: hsl(257, 27%, 26%);
+    border-radius: 12px;
+}
+
+.err-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+article .err-container .input {
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 1rem;
+    border: none;
+    width: 90%;
+    margin: 0 0 .3rem 0;
+}
+
+article .err-container .input.error {
+    border: 2px solid hsl(0, 87%, 67%);
+    width: 90%;
+}
+
+article .err-container .input.error::placeholder {
+    color: hsl(0, 87%, 77%);
+    font-weight: 600;
+}
+
+article span.err {
+    color: hsl(0, 87%, 67%);
+    font-weight: 600;
+}
+
+article .err-container input:focus {
+    outline-color: hsl(180, 66%, 49%);
+}
+
+article.shortener button {
+    border-radius: 6px;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    article .err-container .input {
+        margin: 0 1rem 0 0;
+        width: 100%;
+    }
+
+    article .err-container button {
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    article .err-container .input.error {
+        border: 2px solid hsl(0, 87%, 67%);
+        width: 90%;
+    }
+    
+    article .err-container .input.error::placeholder {
+        color: hsl(0, 87%, 77%);
+        font-weight: 600;
+    }
+    
+    article span.err {
+        color: hsl(0, 87%, 67%);
+        font-weight: 600;
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    article.shortener button {
+        border-radius: 6px;
+        width: auto;
+    }
+
+    .err-container {
+        width: 80%;
+        flex-direction: row;
+    }
+    article button {
+        border-radius: 6px;
+        width: auto;
+    }
+}

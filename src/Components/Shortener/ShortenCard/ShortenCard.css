@@ -1,0 +1,68 @@
+.shorten-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    margin: .5rem 0;
+}
+
+.shorten-card p {
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+}
+
+.right-block {
+    width: 100%;
+}
+
+.shorten-card a.short {
+    color: hsl(180, 66%, 49%);
+}
+
+.shorten-card a {
+    color: hsl(257, 27%, 26%);
+    font-weight: 500;
+    text-decoration: none;
+} 
+
+.shorten-card button {
+    border-radius: 6px;
+    width: 100%;
+    padding: .7rem 0;
+    margin: 1rem 0 0;
+}
+
+.shorten-card button.non-copied {
+    background: hsl(180, 66%, 49%);
+}
+
+.shorten-card button.copied {
+    background: hsl(257, 27%, 26%);
+}
+
+@media screen and (min-width: 1024px) {
+    .shorten-card {
+        width: 80%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right-block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .right-block a.short {
+        margin: 0 1rem 0;
+    }
+
+    .shorten-card button {
+        width: 7rem;
+        margin: 0;
+    }
+}
